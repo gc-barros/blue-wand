@@ -7,7 +7,7 @@
     }
 
     .divisao-inclinada {
-        background-image: url(../../img/divisao.svg);
+        background: url(../../img/divisao.svg) no-repeat center / cover;
         height: 74px;
     }
 
