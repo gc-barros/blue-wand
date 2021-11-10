@@ -1,0 +1,75 @@
+@media screen and (min-width: 0) {
+
+    .introducao {
+        background-color: var(--azul);
+        display: flex;
+        align-items: center;
+    }
+
+    .divisao-inclinada {
+        background-image: url(../../img/divisao.svg);
+        height: 74px;
+    }
+
+    .introducao__container {
+        max-width: 1120px;
+        padding: 72px 0;
+        margin: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .introducao__texto {
+        color: var(--branco);
+        font-family: var(--barlow);
+        font-weight: 600;
+    }
+
+    .introducao__headline {
+        margin: 0;
+        font-size: 48px;
+        line-height: 65px;
+        max-width: 597px;
+    }
+
+    .introducao__description {
+        line-height: 30px;
+        font-size: 16px;
+        margin: 12px 0 18px 0;
+        max-width: 473px;
+        font-weight: 500;
+    }
+
+    .introducao__botoes {
+        max-width: 355px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+     @keyframes flutuar {
+        0% {
+            bottom: 0px;
+        }
+
+        50% {
+            bottom: -18px;
+        }
+
+        100% {
+            bottom: 0px;
+        }
+    }
+
+    .introducao__ilustracao {
+        height: 280px;
+        width: 487px;
+        background: url(../../img/ilustracao-intro.svg) no-repeat center / contain;
+        position: relative;
+        bottom: -24px;
+        animation-name: flutuar;
+        animation-duration: 3.2s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+    }
+    
+}

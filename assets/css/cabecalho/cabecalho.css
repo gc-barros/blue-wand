@@ -1,0 +1,41 @@
+@media screen and (min-width: 0) {
+    .cabecalho {
+        background-color: var(--azul);
+    }
+
+    .cabecalho__container {
+        max-width: 1220px;
+        margin: auto;
+        padding: 24px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cabecalho__logo {
+        font-family: var(--poppins);
+        font-weight: 700;
+        color: var(--branco);
+        font-size: 42px;
+        cursor: pointer;
+        margin-left: 16px;
+        display: flex;
+        align-items: center;
+    }
+
+    .cabecalho__logo::before {
+        content: '';
+        display: inline-block;
+        height: 48px;
+        width: 48px;
+        background: url(../../img/logo.svg) no-repeat center / contain;
+        position: relative;
+        left: -16px;
+        transition: 0.5s ease all;
+
+    }
+
+    .cabecalho__logo:hover::before {
+        background-image: url(../../img/logo-reverse.svg);
+    }
+}

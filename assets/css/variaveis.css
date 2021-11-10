@@ -1,0 +1,9 @@
+:root {
+    /* Cores */
+    --azul: #0090FF;
+    --branco: #ffffff;
+
+    /* Tipografia */
+    --poppins: 'Poppins', sans-serif;
+    --barlow: 'Barlow', sans-serif;
+}
