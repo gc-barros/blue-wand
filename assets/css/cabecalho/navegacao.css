@@ -38,8 +38,77 @@
     color: var(--branco);
 }
 
+.cabecalho__item-menu--logo {
+    display: none;
+}
+
 @media screen and (min-width: 1140px) {
     .cabecalho__menu {
         width: 390px;
     }
+}
+
+@media screen and (max-width: 768px) {
+    .cabecalho__menu {
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        align-items: center;
+        left: 0px;
+        background-color: var(--branco);
+        color: var(--azul);
+        top: 0px;
+        width: 200px;
+        height: 100vh;
+        box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.11);
+        z-index: 4;
+        position: fixed;
+        padding-top: 72px;
+    }
+
+    .cabecalho__item-menu--logo {
+        display: block;
+        margin-bottom: 24px;
+        margin-top: 24px;
+        position: relative;
+    }
+
+    .ri-close-line {
+        position: absolute;
+        text-align: center;
+        top: -80px;
+        right: -56px;
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+        /* background-color: #0091ff1c; */
+        border-radius: 100%;
+    }
+
+    .cabecalho__item-menu a,
+    .cabecalho__item-menu .secundary-button,
+    .cabecalho__item-menu .primary-button {
+        color: var(--azul);
+        background-color: transparent;
+    }
+    
+    .cabecalho__item-menu {
+        width: 90%;
+        padding: 16px;
+        border-bottom: 1px var(--azul) solid;
+    }
+
+    .cabecalho__item-menu:hover {
+        background-color: #0091ff1c
+    }
+
+    .cabecalho__item-menu .geral__botao {
+        background-color: none;
+        border: none;
+        padding: 0;
+    }
+
+    .cabecalho__item-menu .geral__botao:hover {
+        transform: scale(1);
+    }
+
 }
