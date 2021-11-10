@@ -1,41 +1,45 @@
-@media screen and (min-width: 0) {
+.cabecalho__menu {
+    display: flex;
+    align-items: center;
+    width: 360px;
+    justify-content: space-between;
+}
+
+.cabecalho__item-menu a {
+    text-decoration: none;
+    color: var(--branco);
+    font-family: var(--barlow);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.geral__botao {
+    border: 2px solid var(--branco);
+    padding: 10px 30px;
+    border-radius: 60px;
+    font-family: var(--barlow);
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: .5s ease all;
+}
+
+.geral__botao:hover {
+    transform: scale(1.1);
+}
+
+.primary-button {
+    background-color: var(--branco);
+    color: var(--azul);
+}
+
+.secundary-button {
+    background-color: transparent;
+    color: var(--branco);
+}
+
+@media screen and (min-width: 1140px) {
     .cabecalho__menu {
-        display: flex;
-        align-items: center;
         width: 390px;
-        justify-content: space-between;
-    }
-
-    .cabecalho__item-menu a {
-        text-decoration: none;
-        color: var(--branco);
-        font-family: var(--barlow);
-        font-weight: 600;
-        font-size: 14px;
-    }
-
-    .geral__botao {
-        border: 2px solid var(--branco);
-        padding: 10px 30px;
-        border-radius: 60px;
-        font-family: var(--barlow);
-        font-weight: 600;
-        font-size: 14px;
-        cursor: pointer;
-        transition: .5s ease all;
-    }
-
-    .geral__botao:hover {
-        transform: scale(1.1);
-    }
-
-    .primary-button {
-        background-color: var(--branco);
-        color: var(--azul);
-    }
-
-    .secundary-button {
-        background-color: transparent;
-        color: var(--branco);
     }
 }
