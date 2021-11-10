@@ -1,41 +1,73 @@
-@media screen and (min-width: 0) {
-    .cabecalho {
-        background-color: var(--azul);
-    }
+
+.cabecalho {
+    background-color: var(--azul);
+}
+
+.cabecalho__container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 24px;
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.cabecalho__logo {
+    font-family: var(--poppins);
+    font-weight: 700;
+    color: var(--branco);
+    font-size: 42px;
+    cursor: pointer;
+    margin-left: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho__logo::before {
+    content: '';
+    display: inline-block;
+    height: 48px;
+    width: 48px;
+    background: url(../../img/logo.svg) no-repeat center / contain;
+    position: relative;
+    left: -16px;
+    transition: 0.5s ease all;
+
+}
+
+.cabecalho__logo:hover::before {
+    background-image: url(../../img/logo-reverse.svg);
+}
+
+@media screen and (max-width: 768px) {
 
     .cabecalho__container {
-        max-width: 1220px;
-        margin: auto;
-        padding: 24px 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        justify-content: center;
+    }
+
+    .cabecalho__navegacao {
+        display: none;
+    }
+
+    .cabecalho__hamburger {
+        width: 24px;
+        height: 24px;
+        background: url(../../img/menu-mobile.svg) no-repeat center / contain;
+        position: absolute;
+        left: 24px;
+        top: 42px;
+        cursor: pointer;
+        z-index: 10;
     }
 
     .cabecalho__logo {
-        font-family: var(--poppins);
-        font-weight: 700;
-        color: var(--branco);
-        font-size: 42px;
-        cursor: pointer;
-        margin-left: 16px;
-        display: flex;
-        align-items: center;
+        font-size: 32px;
     }
 
     .cabecalho__logo::before {
-        content: '';
-        display: inline-block;
-        height: 48px;
-        width: 48px;
-        background: url(../../img/logo.svg) no-repeat center / contain;
-        position: relative;
-        left: -16px;
-        transition: 0.5s ease all;
-
-    }
-
-    .cabecalho__logo:hover::before {
-        background-image: url(../../img/logo-reverse.svg);
+        display: none;
     }
 }

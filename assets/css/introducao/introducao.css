@@ -1,75 +1,119 @@
-@media screen and (min-width: 0) {
+.introducao {
+    background-color: var(--azul);
+    display: flex;
+    align-items: center;
+}
 
-    .introducao {
-        background-color: var(--azul);
-        display: flex;
-        align-items: center;
+.divisao-inclinada {
+    background: url(../../img/divisao.svg) no-repeat center / cover;
+    height: 74px;
+    position: relative;
+    top: -1px;
+}
+
+.introducao__container {
+    max-width: 1200px;
+    padding: 72px 24px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.introducao__texto {
+    color: var(--branco);
+    font-family: var(--barlow);
+    font-weight: 600;
+}
+
+.introducao__headline {
+    margin: 0;
+    font-size: 48px;
+    line-height: 65px;
+    max-width: 597px;
+}
+
+.introducao__description {
+    line-height: 30px;
+    font-size: 16px;
+    margin: 12px 0 18px 0;
+    max-width: 473px;
+    font-weight: 500;
+}
+
+.introducao__botoes {
+    max-width: 355px;
+    min-width: 305px;
+    display: flex;
+    justify-content: space-between;
+}
+
+    @keyframes flutuar {
+    0% {
+        bottom: 0px;
     }
 
-    .divisao-inclinada {
-        background: url(../../img/divisao.svg) no-repeat center / cover;
-        height: 74px;
+    50% {
+        bottom: -18px;
     }
+
+    100% {
+        bottom: 0px;
+    }
+}
+
+.introducao__ilustracao {
+    height: 280px;
+    width: 487px;
+    background: url(../../img/ilustracao-intro.svg) no-repeat center / contain;
+    position: relative;
+    bottom: -24px;
+    animation-name: flutuar;
+    animation-duration: 3.2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+@media screen and (max-width: 1140px) {
+    .introducao__ilustracao {
+        margin-top: 56px;
+    }
+}
+
+@media screen and (max-width: 768px) {
 
     .introducao__container {
-        max-width: 1120px;
-        padding: 72px 0;
-        margin: auto;
-        display: flex;
-        align-items: center;
-    }
-
-    .introducao__texto {
-        color: var(--branco);
-        font-family: var(--barlow);
-        font-weight: 600;
+        padding: 48px 24px 8px 24px;
     }
 
     .introducao__headline {
-        margin: 0;
-        font-size: 48px;
-        line-height: 65px;
-        max-width: 597px;
+        font-size: 28px;
+        line-height: 45px;
+        max-width: 324px;
     }
 
     .introducao__description {
-        line-height: 30px;
-        font-size: 16px;
-        margin: 12px 0 18px 0;
-        max-width: 473px;
-        font-weight: 500;
-    }
-
-    .introducao__botoes {
-        max-width: 355px;
-        display: flex;
-        justify-content: space-between;
-    }
-
-     @keyframes flutuar {
-        0% {
-            bottom: 0px;
-        }
-
-        50% {
-            bottom: -18px;
-        }
-
-        100% {
-            bottom: 0px;
-        }
+        font-size: 14px;
+        max-width: 324px;
     }
 
     .introducao__ilustracao {
-        height: 280px;
-        width: 487px;
-        background: url(../../img/ilustracao-intro.svg) no-repeat center / contain;
-        position: relative;
-        bottom: -24px;
-        animation-name: flutuar;
-        animation-duration: 3.2s;
-        animation-timing-function: ease;
-        animation-iteration-count: infinite;
+        width: 80vw;
+        margin-top: 48px;
+        z-index: 3;
     }
-    
+
+    .geral__botao {
+        padding: 10px 22px;
+    }
+
+    .divisao-inclinada {
+        background-image: url(../../img/divisao2.svg);
+        background-position: center;
+        background-size: cover;
+        height: 310px;
+        top: -120px;
+        z-index: -1;
+    }
 }
