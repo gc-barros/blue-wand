@@ -1,0 +1,205 @@
+.conheca {
+    background-color: var(--azul);
+    color: var(--branco);
+    font-family: var(--barlow);
+    padding: 80px 24px 180px 24px;
+    position: relative;
+}
+
+.divisao-inclinada.divisao-invertida {
+    background-image: url(../../img/divisao-invertida.svg);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: -72px;
+}
+
+.conheca__blue-wand {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.conheca__texto {
+    max-width: 428px;
+}
+
+.conheca__titulo {
+    font-size: 48px;
+    font-weight: 600;
+    margin-top: 32px;
+    margin-bottom: 26px;
+}
+
+.conheca__descricao {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 37px;
+}
+
+.conheca__ilustracao {
+    width: 506px;
+    height: 506px;
+    background: url(../../img/conheca/conheca-ilustra.svg) no-repeat center / cover;
+}
+
+.conheca__redes-sociais {
+    max-width: 943px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+
+.conheca__blobs-redes {
+    position: absolute;
+    width: 943px;
+    height: 520px;
+    background: url(../../img/conheca/conheca-blobs-redes.svg) no-repeat center / cover;
+    top: 156px;
+}
+
+.conheca__lista {
+    text-align: left;
+    margin: auto;
+    margin-top: 265px;
+    width: 240px;
+    position: relative;
+    z-index: 2;
+}
+
+.conheca__item-lista {
+    margin-bottom: 44px;
+
+}
+
+.conheca__item-lista a {
+    text-decoration: none;
+    color: #08263E;
+    font-size: 24px;
+    font-weight: 400;
+    transition: .8s ease-out all;
+}
+
+.conheca__item-lista a:hover {
+    color: var(--azul);
+    filter: invert(44%) sepia(99%) saturate(3639%) hue-rotate(188deg) brightness(103%) contrast(103%);
+}
+
+.conheca__item-lista a::before {
+    content: '';
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background: url(../../img/conheca/conheca-insta.svg) no-repeat center / cover;
+    position: relative;
+    bottom: -6px;
+    left: -18px;
+}
+
+.conheca__item-lista--face a::before {
+    background-image: url(../../img/conheca/conheca-face.svg);
+}
+
+.conheca__item-lista--yt a::before {
+    background-image: url(../../img/conheca/conheca-yt.svg);
+}
+
+.conheca__blobs-left {
+    position: absolute;
+    width: 600px;
+    height: 462px;
+    background: url(../../img/conheca/conheca-left-blob.svg) no-repeat center / contain;
+    top: 55%;
+    transform: translateY(-50%);
+    left: -400px;
+}
+
+.conheca__blobs-right {
+    position: absolute;
+    width: 300px;
+    height: 362px;
+    background: url(../../img/conheca/conheca-right-blob.svg) no-repeat right / contain;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0px;
+}
+
+@media screen and (max-width: 1023px) {
+    .conheca__blobs-right,
+    .conheca__blobs-left {
+        display: none;
+    }
+
+    .conheca__blue-wand {
+        justify-content: center;
+    }
+
+    .conheca__blobs-redes {
+        position: absolute;
+        width: 736px;
+        height: 524px;
+        background: url(../../img/conheca/conheca-blobs-redes.svg) no-repeat center / cover;
+        top: 140px;
+        left: 48%;
+        transform: translateX(-50%);
+    }
+
+    .conheca__item-lista {
+        margin-bottom: 26px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .conheca {
+        padding-top: 0px;
+    }
+    .conheca__titulo {
+        font-size: 23px;
+        line-height: 45px;
+        margin-top: 80px;
+    }
+
+    .conheca__descricao {
+        font-size: 16px;
+        max-width: 324px;
+    }
+
+    .conheca__ilustracao {
+        height: 300px;
+        width: 310px;
+    }
+
+    .conheca__item-lista a {
+        font-size: 16px;
+    }
+
+    .conheca__item-lista a::before {
+        width: 24px;
+        height: 24px;
+        left: -10px;
+    }
+
+    .conheca__blobs-redes {
+        width: 100vw;
+        left: 50%;
+        top: 24px;
+    }
+
+    .conheca__lista {
+        margin-top: 170px;
+        right: -44px;
+    }
+
+    .divisao-inclinada.divisao-invertida {
+        background-image: url(../../img/conheca/divisao-inclinada-reverse.svg);
+        background-position: center;
+        background-size: cover;
+        height: 310px;
+        top: -190px;
+        z-index: -1;
+    }
+
+}
