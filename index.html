@@ -49,18 +49,18 @@
     <!-- Cabeçalho -->
     <header class="cabecalho">
         <!-- Container -->
-        <div class="cabecalho__hamburger"></div>
+        <div class="cabecalho__hamburger" data-hamburger></div>
         <div class="cabecalho__container">
             <!-- Logo -->
             <div class="cabecalho__logo">Blue Wand</div>
             <!-- Navegação -->
-            <nav class="cabecalho__navegacao">
+            <nav class="cabecalho__navegacao" data-navegacao>
                 <!-- Menu -->
                 <ul class="cabecalho__menu">
+                    <i class="ri-close-line ri-lg" data-fechar aria-label="Fechar menu"></i>
                     <!-- Itens -->
                     <li class="cabecalho__item-menu--logo">
                         <img src="assets/img/logo-reverse.svg" alt="Logo Blue Wand">
-                        <i class="ri-close-line ri-lg"></i>
                     </li>
                     <li class="cabecalho__item-menu">
                         <a href="#">Sobre nós</a>
@@ -121,5 +121,6 @@
 
     <footer></footer>
 
+    <script src="assets/js/menuLateral.js"></script>
 </body>
 </html>

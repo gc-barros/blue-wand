@@ -46,10 +46,23 @@
 
     .cabecalho__container {
         justify-content: center;
+        background-color: var(--azul);
+        position: relative;
     }
 
     .cabecalho__navegacao {
-        display: none;
+        /* display: none; */
+        position: absolute;
+        left: 0;
+        top: -400px;
+        transition: .8s ease all;
+        opacity: 0;
+    }
+
+    .cabecalho__navegacao.cabecalho__navegacao--ativo {
+        /* display: block; */
+        top: 0px;
+        opacity: 1;
     }
 
     .cabecalho__hamburger {
@@ -60,7 +73,7 @@
         left: 24px;
         top: 42px;
         cursor: pointer;
-        z-index: 10;
+        z-index: 6;
     }
 
     .cabecalho__logo {

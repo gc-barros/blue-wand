@@ -42,6 +42,10 @@
     display: none;
 }
 
+.ri-close-line {
+    display: none;
+}
+
 @media screen and (min-width: 1140px) {
     .cabecalho__menu {
         width: 390px;
@@ -49,6 +53,7 @@
 }
 
 @media screen and (max-width: 768px) {
+
     .cabecalho__menu {
         flex-flow: column wrap;
         justify-content: flex-start;
@@ -56,32 +61,39 @@
         left: 0px;
         background-color: var(--branco);
         color: var(--azul);
-        top: 0px;
-        width: 200px;
-        height: 100vh;
+        top: 96px;
+        width: 100vw;
         box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.11);
         z-index: 4;
-        position: fixed;
-        padding-top: 72px;
+        position: absolute;
+        padding-top: 88px;
     }
 
     .cabecalho__item-menu--logo {
         display: block;
-        margin-bottom: 24px;
-        margin-top: 24px;
-        position: relative;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 18px;
+        left: 22px;
+    }
+
+    .cabecalho__item-menu--logo img {
+        width: 100%;
     }
 
     .ri-close-line {
-        position: absolute;
+        display: block;
         text-align: center;
-        top: -80px;
-        right: -56px;
+        justify-self: flex-end;
         height: 30px;
         width: 30px;
         line-height: 30px;
         /* background-color: #0091ff1c; */
         border-radius: 100%;
+        position: absolute;
+        top: 16px;
+        right: 16px;
     }
 
     .cabecalho__item-menu a,
@@ -92,13 +104,12 @@
     }
     
     .cabecalho__item-menu {
-        width: 90%;
-        padding: 16px;
-        border-bottom: 1px var(--azul) solid;
+        width: 100%;
+        padding: 24px;
     }
 
     .cabecalho__item-menu:hover {
-        background-color: #0091ff1c
+        background-color: #0091ff1c;
     }
 
     .cabecalho__item-menu .geral__botao {
