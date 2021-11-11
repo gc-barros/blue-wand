@@ -9,6 +9,7 @@
     height: 74px;
     position: relative;
     top: -1px;
+    z-index: 3;
 }
 
 .introducao__container {
@@ -49,7 +50,7 @@
     justify-content: space-between;
 }
 
-    @keyframes flutuar {
+@keyframes flutuar {
     0% {
         bottom: 0px;
     }
@@ -101,7 +102,7 @@
     .introducao__ilustracao {
         width: 80vw;
         margin-top: 48px;
-        z-index: 3;
+        z-index: 6;
     }
 
     .geral__botao {
@@ -114,6 +115,6 @@
         background-size: cover;
         height: 310px;
         top: -120px;
-        z-index: -1;
+        z-index: 3;
     }
 }

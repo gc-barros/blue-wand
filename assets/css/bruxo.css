@@ -1,0 +1,111 @@
+.bruxo {
+    background-color: #00467B;
+    position: relative;
+    top: -64px;
+    padding: 160px 24px 112px 24px;
+    color: var(--branco);
+    font-family: var(--barlow);
+}
+
+.bruxo__container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.bruxo__ilustracao {
+    height: 298px;
+    width: 267px;
+    background: url(../../assets/img/bruxo.svg) no-repeat center / contain;
+}
+
+.bruxo__texto {
+    max-width: 505px;
+    margin-left: 64px;
+}
+
+@keyframes bruxaria {
+    0% {
+        opacity: 0.12;
+    }
+
+    50% {
+        opacity: 0.72;
+    }
+
+    100% {
+        opacity: 0.12;
+    }
+}
+
+.bruxo__texto::before {
+    content: '';
+    display: block;
+    height: 156px;
+    background: url(../../assets/img/bluewand-logo3.svg) no-repeat center / contain;
+    opacity: 0.12;
+    margin-bottom: 40px;
+    animation-name: bruxaria;
+    animation-duration: 3.6s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+.bruxo__lema {
+    font-size: 32px;
+    line-height: 37px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.bruxo__description {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+}
+
+.bruxo__description strong {
+    font-weight: 600;
+}
+
+@media screen and (max-width: 883px) {
+    .bruxo__ilustracao {
+        order: 2;
+       margin-top: 72px;
+    }
+
+    .bruxo__texto {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .bruxo {
+        top: -310px;
+        padding-top: 220px;
+    }
+
+    .bruxo__texto {
+        width: 320px;
+    }
+
+    .bruxo__lema {
+        font-size: 24px;
+    }
+
+    .bruxo__description {
+        font-size: 14px;
+    }
+
+    .bruxo__texto::before {
+        height: 104px;
+    }
+
+    .bruxo__ilustracao {
+        height: 232px;
+    }
+
+    
+}
