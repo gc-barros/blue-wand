@@ -10,15 +10,6 @@ botaoFechar.addEventListener('click', () => {
     navegacao.classList.remove('cabecalho__navegacao--ativo');
 })
 
-navegacao.addEventListener('click', (event) => {
-    event.stopPropagation();
-})
-
-document.addEventListener('click', (event) => {
-    const alvoValido = event.target != hamburger;
-    const menuAberto = navegacao.classList.contains('cabecalho__navegacao--ativo');
-
-    if (alvoValido && menuAberto) {
-            navegacao.classList.remove('cabecalho__navegacao--ativo');
-        }
+document.addEventListener('scroll', () => {
+    setTimeout(() => {navegacao.classList.remove('cabecalho__navegacao--ativo');}, 500);
 });

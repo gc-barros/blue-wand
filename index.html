@@ -9,7 +9,7 @@
     <meta name="theme-color" content="#0090FF">
 
     <!-- Título -->
-    <title>Blue Wand | Prevenção e apoio a homens com câncer de pênis</title>
+    <title>Blue Wand | Um bom bruxo sempre deve zelar pela sua varinha</title>
 
     <!-- Descrição -->
     <meta name="description" content="Cuidar de si mesmo é a coisa mais masculina que você pode fazer! Conheça a Blue Wand, uma comunidade maranhense de apoio a homens com câncer de pênis.">
@@ -17,7 +17,7 @@
     <!-- Imagens para compartilhamento de links -->
     <meta property="og:locale" content="pt_BR">
     <meta property="og:site_name" content="Blue Wand">
-    <meta property="og:title" content="Blue Wand | Prevenção e apoio a homens com câncer de pênis">
+    <meta property="og:title" content="Blue Wand | Um bom bruxo sempre deve zelar pela sua varinha">
     <meta property="og:description" content="Conheça a comunidade maranhense de prevenção e apoio a homens com cancer de pênis. Cuidar de si mesmo é a coisa mais masculina que você pode fazer!">
     <meta property="og:image" itemprop="image" content="https://bluewand.vercel.app/assets/img/bluewand.jpg">
     <meta property="og:image:secure_url" content="https://bluewand.vercel.app/assets/img/bluewand.jpg">
@@ -46,6 +46,8 @@
     <link rel="stylesheet" href="assets/css/introducao/introducao.css">
     <!-- CSS da seção 'Bruxo' -->
     <link rel="stylesheet" href="assets/css/bruxo.css">
+    <!-- CSS da seção 'Apresentação inicial dos dados' -->
+    <link rel="stylesheet" href="assets/css/apresentacao-dados/apresentacao-dados.css">
     <!-- CSS da seção "Conheça a Blue Wand" -->
     <link rel="stylesheet" href="assets/css/conheca/conheca.css">
     <!-- CSS do rodapé -->
@@ -70,15 +72,15 @@
                         <img src="assets/img/logo-reverse.svg" alt="Logo Blue Wand">
                     </li>
                     <li class="cabecalho__item-menu">
-                        <a href="#">Sobre nós</a>
+                        <a href="#sobrenos">Sobre nós</a>
                     </li>
                     <li class="cabecalho__item-menu">
-                        <a href="#">
+                        <a href="#bluewand">
                             <button class="geral__botao primary-button">Juntar-se</button>
                         </a>
                     </li>
                     <li class="cabecalho__item-menu">
-                        <a href="#">
+                        <a href="#contato">
                             <button class="geral__botao secundary-button">Contato</button>
                         </a>
                     </li>
@@ -103,12 +105,12 @@
                     <p class="introducao__description">Conheça a Blue Wand, uma comunidade maranhense de prevenção e apoio a homens com cancer de pênis.</p>
                     <!-- Botões -->
                     <div class="introducao__botoes">
-                        <a href="#">
+                        <a href="#bluewand">
                             <button class="geral__botao primary-button">
                                 Faça parte da Blue Wand
                             </button>
                         </a>
-                        <a href="#">
+                        <a href="#contato">
                             <button class="geral__botao secundary-button">
                                 Contato
                             </button>
@@ -123,7 +125,8 @@
 
         <div class="divisao-inclinada"></div>
 
-        <section class="bruxo">
+        <!-- Bruxo -->
+        <section class="bruxo" id="sobrenos">
             <div class="bruxo__container">
                 <div class="bruxo__ilustracao"></div>
                 <div class="bruxo__texto">
@@ -131,6 +134,34 @@
                     <p class="bruxo__description">Esse é o principal lema da <strong>Blue Wand</strong> ("Varinha Azul", para os íntimos). Mas por que uma <strong>comunidade maranhense</strong> voltada à saúde genital masculina?</p>
                 </div>
             </div>
+        </section>
+
+        <!-- Apresentação inicial dos dados -->
+        <section class="apresentacao-dados">
+            <!-- Tópico do gráfico -->
+            <article class="apresentacao-dados__topico">
+                <div class="apresentacao-dados__container">
+                    <h3 class="apresentacao-dados__titulo">
+                        Segundo dados do DATASUS e IBGE, a taxa de óbitos por câncer de pênis, testículo e prostata vem aumentando nos ultimos anos no Maranhão.
+                    </h3>
+                    <div class="apresentacao-dados__imagem-box">
+                        <img src="assets/img/dados/grafico-ilustra.jpg" alt="Gráfico de linha mostra alta no índice de mortes/100.000hab, devido a câncer de pênis, testículo e prostata, de 2011 a 2019 no Maranhão." class="apresentacao-dados__grafico">
+                        <img src="assets/img/dados/grafico.jpg" alt="Gráfico de linha mostra alta no índice de mortes/100.000hab, devido a câncer de pênis, testículo e prostata, de 2011 a 2019 no Maranhão." class="apresentacao-dados__grafico--768">
+                    </div>
+                </div>
+            </article>
+            <!-- Tópico do mapa -->
+            <article class="apresentacao-dados__topico">
+                <div class="apresentacao-dados__container">
+                    <h3 class="apresentacao-dados__titulo apresentacao-dados__titulo--bars">
+                        Agora confira um mapa de calor que classifica os estados brasileiros com base no número de mortes por câncer de pênis (por 100mil habitantes) nos anos de 2011 a 2019. Notou o destaque do Maranhão e seus estados vizinhos?
+                    </h3>
+                    <div class="apresentacao-dados__imagem-box">
+                        <img src="assets/img/dados/ilustra-mapa.svg" alt="Mapa de calor do Brasil com base no número de mortes por câncer de pênis destaca Maranhão e estados vizinhos." class="apresentacao-dados__grafico">
+                        <img src="assets/img/dados/mapa.svg" alt="Gráfico de linha mostra alta no índice de mortes/100.000hab, devido a câncer de pênis, testículo e prostata, de 2011 a 2019 no Maranhão." class="apresentacao-dados__grafico--768">
+                    </div>
+                </div>
+            </article>
         </section>
 
         <div style="height: 600px;"></div> <!-- Só para criar espaço, pode apagar depois -->
@@ -141,7 +172,7 @@
         <section class="conheca">
             <div class="divisao-inclinada divisao-invertida"></div>
 
-            <div class="conheca__blue-wand">
+            <div class="conheca__blue-wand" id="bluewand">
                 <div class="conheca__texto">
                     <h2 class="conheca__titulo">O que é Blue Wand?</h2>
                     <p class="conheca__descricao">A Blue Wand é um grupo 100% maranhense de apoio a homens acometidos por câncer de pênis. Nosso objetivo é combater a desinformação, incentivar a prevenção e o tratamento para esta doença.</p>
@@ -150,7 +181,7 @@
                 <div class="conheca__ilustracao"></div>
             </div>
 
-            <div class="conheca__redes-sociais">
+            <div class="conheca__redes-sociais" id="contato">
                 <h3 class="conheca__titulo">Conheça nossas redes sociais</h3>
                 <ul class="conheca__lista">
                     <li class="conheca__item-lista conheca__item-lista--insta">
