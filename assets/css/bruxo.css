@@ -69,6 +69,17 @@
     font-weight: 600;
 }
 
+.bruxo-final__mensagem {
+    font-family: var(--barlow);
+    margin-top: 16px;
+    font-style: italic;
+    opacity: 0;
+}
+
+.bruxo-final__mensagem.visible {
+    opacity: 0.7;
+}
+
 @media screen and (max-width: 883px) {
     .bruxo__ilustracao {
         order: 2;

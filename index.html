@@ -46,12 +46,14 @@
     <link rel="stylesheet" href="assets/css/introducao/introducao.css">
     <!-- CSS da seção 'Bruxo' -->
     <link rel="stylesheet" href="assets/css/bruxo.css">
+    <link rel="stylesheet" href="assets/css/bruxo-final.css">
     <!-- CSS da seção 'Apresentação inicial dos dados' -->
     <link rel="stylesheet" href="assets/css/apresentacao-dados/apresentacao-dados.css">
     <!-- CSS da seção "Conheça a Blue Wand" -->
     <link rel="stylesheet" href="assets/css/conheca/conheca.css">
     <!-- CSS do rodapé -->
     <link rel="stylesheet" href="assets/css/rodape/rodape.css">
+    <link rel="stylesheet" href="assets/css/voltarAoTopo.css">
 
 </head>
 <body>
@@ -136,6 +138,11 @@
             </div>
         </section>
 
+        <!-- Botão de voltar ao topo -->
+        <button onclick="topFunction()" id="scroll-button" title="Vá para o início da página">
+            <i class="ri-arrow-up-circle-line"></i>
+        </button>
+
         <!-- Apresentação inicial dos dados -->
         <section class="apresentacao-dados">
             <!-- Tópico do gráfico -->
@@ -201,10 +208,36 @@
             <div class="conheca__blobs-right"></div>
         </section>
 
+        <!-- Bruxo final -->
+        <section class="bruxo bruxo-final">
+            <div class="bruxo__container">
+                <div class="bruxo__ilustracao"></div>
+                <div class="bruxo__texto">
+                    <h2 class="bruxo__lema">Ei, rapá! Ainda não acabou...</h2>
+                    <p class="bruxo__description">Nos ajude a dar a mais visibilidade a esta causa compartilhando o projeto ou entrando em contato conosco.</p>
+                    <div class="bruxo__botoes">
+                        <a>
+                            <button class="geral__botao primary-button" data-share>
+                                Compartilhar <i class="ri-share-line"></i>
+                            </button>
+                        </a>
+                        <a href="#contato">
+                            <button class="geral__botao secundary-button">
+                                Entrar em contato
+                            </button>
+                        </a>
+                    </div>
+                    <p class="bruxo-final__mensagem" data-endline>Link copiado com sucesso!</p>
+                </div>
+                
+            </div>
+        </section>
     </main>
 
     <footer class="rodape">Todos os direitos reservados.</footer>
 
     <script src="assets/js/menuLateral.js"></script>
+    <script src="assets/js/share.js"></script>
+    <script src="assets/js/scrollToTop.js"></script>
 </body>
 </html>

@@ -1,0 +1,66 @@
+.bruxo.bruxo-final {
+    top: 0;
+    padding-top: 140px;
+}
+
+.bruxo.bruxo-final .bruxo__ilustracao {
+    background-image: url(../../assets/img/bruxo-velho.svg);
+    order: 2;
+    width: 305px;
+    height: 306px;
+}
+
+.bruxo.bruxo-final .bruxo__texto {
+    margin-right: 64px;
+    margin-left: 0;
+}
+
+.bruxo__botoes {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.bruxo__botoes .geral__botao {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 160px;
+}
+
+.bruxo__botoes .geral__botao.primary-button {
+    color: #00467B;
+    margin-right: 24px;
+    height: 40px;
+    line-height: 0px;
+}
+
+.ri-share-line {
+    position: relative;
+    bottom: -3px;
+    right: -3px;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 883px) {
+
+    .bruxo.bruxo-final .bruxo__texto {
+        margin-right: 0;
+    }
+
+    .bruxo__botoes .geral__botao {
+        padding: 10px 2px;
+        width: 150px;
+    }
+
+    .bruxo__botoes .geral__botao.primary-button {
+        margin-right: 12px;
+    }
+
+    .bruxo.bruxo-final .bruxo__ilustracao {
+        width: 240px;
+        height: 240px;
+    }
+}
+        
+    
+
