@@ -7,7 +7,7 @@
 #### 🔗 Confira em: https://bluewand.vercel.app/
 <br>
 
-<!-- <a href="https://porelas.vercel.app/"><img alt="GIF da landing page do Projeto Por Elas" src="https://media4.giphy.com/media/JuJbvFOZ54ANDqXqpq/giphy.gif?cid=790b76117c1e343a367649a641ccc98b247ae7911ab315d1&rid=giphy.gif&ct=g"></a> -->
+<a href="https://porelas.vercel.app/"><img alt="GIF da landing page do Projeto Por Elas" src="https://media4.giphy.com/media/o2gZvnIokMTUhS1xL9/giphy.gif?cid=790b761106baf6b96ede1d8c7f2089203ebc46fb587c7dcc&rid=giphy.gif&ct=g"></a>
 
 ___
 
