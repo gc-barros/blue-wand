@@ -118,3 +118,25 @@
         z-index: 3;
     }
 }
+
+@media screen and (max-width: 360px) {
+    .introducao__container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .introducao__texto {
+        max-width: 320px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .geral__botao {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .introducao__botoes {
+        min-width: 0;
+    }
+}

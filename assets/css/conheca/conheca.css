@@ -225,3 +225,14 @@
     }
 
 }
+
+@media screen and (max-width: 340px) {
+    
+    .conheca__lista {
+        right: -32px;
+    }
+    
+    .conheca__blobs-redes {
+        top: 44px;
+    }
+}
