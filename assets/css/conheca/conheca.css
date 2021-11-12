@@ -2,7 +2,7 @@
     background-color: var(--azul);
     color: var(--branco);
     font-family: var(--barlow);
-    padding: 80px 24px 180px 24px;
+    padding: 24px 24px 180px 24px;
     position: relative;
 }
 
@@ -34,6 +34,11 @@
     margin-bottom: 26px;
 }
 
+.conheca__redes-sociais .conheca__titulo {
+    position: relative;
+    bottom: -56px;
+}
+
 .conheca__descricao {
     font-size: 20px;
     font-weight: 500;
@@ -44,6 +49,8 @@
     width: 506px;
     height: 506px;
     background: url(../../img/conheca/conheca-ilustra.svg) no-repeat center / cover;
+    position: relative;
+    z-index: 3;
 }
 
 .conheca__redes-sociais {
@@ -128,6 +135,10 @@
 }
 
 @media screen and (max-width: 1023px) {
+    .conheca__redes-sociais .conheca__titulo {
+        bottom: -88px;
+    }
+
     .conheca__blobs-right,
     .conheca__blobs-left {
         display: none;
@@ -155,16 +166,27 @@
 @media screen and (max-width: 768px) {
     .conheca {
         padding-top: 0px;
+        padding-bottom: 120px;
     }
     .conheca__titulo {
         font-size: 23px;
         line-height: 45px;
-        margin-top: 80px;
+        margin-top: 0px;
+        position: relative;
+        z-index: 3;
+    }
+
+    .conheca__redes-sociais .conheca__titulo {
+        margin-top: 72px;
+        margin-bottom: 0;
+        bottom: 0;
     }
 
     .conheca__descricao {
         font-size: 16px;
         max-width: 324px;
+        position: relative;
+        z-index: 3;
     }
 
     .conheca__ilustracao {
@@ -185,11 +207,11 @@
     .conheca__blobs-redes {
         width: 100vw;
         left: 50%;
-        top: 24px;
+        top: 0px;
     }
 
     .conheca__lista {
-        margin-top: 170px;
+        margin-top: 148px;
         right: -44px;
     }
 
@@ -198,8 +220,8 @@
         background-position: center;
         background-size: cover;
         height: 310px;
-        top: -190px;
-        z-index: -1;
+        top: -204px;
+        z-index: 0;
     }
 
 }

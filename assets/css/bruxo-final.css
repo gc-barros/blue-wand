@@ -43,6 +43,10 @@
 
 @media screen and (max-width: 883px) {
 
+    .bruxo.bruxo-final {
+        padding-top: 88px;
+    }
+
     .bruxo.bruxo-final .bruxo__texto {
         margin-right: 0;
     }

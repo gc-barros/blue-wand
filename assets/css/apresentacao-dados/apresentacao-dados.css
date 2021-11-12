@@ -58,6 +58,11 @@
     .apresentacao-dados {
         padding-top: 0;
         top: -100px;
+        padding-bottom: 32px;
+    }
+
+    .apresentacao-dados__topico:nth-of-type(2) {
+        padding-bottom: 80px;
     }
 
     .apresentacao-dados__titulo {
