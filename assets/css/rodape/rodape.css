@@ -1,7 +1,107 @@
-.rodape {
-    background-color: #000;
-    color: var(--branco);
-    font-family: var(--barlow);
-    padding: 48px;
-    text-align: center;
+@media screen and (min-width: 0) {
+
+    .rodape {
+        background-color: #000;
+        color: var(--branco);
+        font-family: var(--barlow);
+        padding: 72px 24px 0px 24px;
+        text-align: center;
+        font-size: 14px;
+        line-height: 28px;
+    }
+    
+    .rodape__logo {
+        margin: auto;
+        margin-bottom: 32px;
+        opacity: 0.7; 
+        justify-content: center;
+    }
+
+    .rodape__logo img {
+        width: 100%;
+    }
+
+    .rodape__texto {
+        max-width: 280px;
+        margin: auto;
+        margin-bottom: 32px;
+    }
+
+    .rodape__texto a {
+        font-weight: bold;
+        color: var(--branco);
+        text-decoration: none;
+        transition: .3s ease all;
+    }
+
+    .rodape__time {
+        text-align: left;
+        max-width: 232px;
+        margin: 16px auto;
+    }
+
+    .rodape__time-nome {
+        font-weight: 600;
+        padding-bottom: 4px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.24);
+        margin-bottom: 8px;
+    }
+
+    .rodape__time-nome i {
+        font-weight: 100;
+        margin-right: 8px;
+        font-size: 18px;
+        position: relative;
+        bottom: -4px;
+    }
+
+    .rodape__endline {
+        padding: 64px 8px 24px 8px;
+        opacity: 0.7;
+    }
+
+    .rodape__membro i {
+        font-size: 18px;
+        position: relative;
+        bottom: -3px;
+        margin-right: 6px;
+    }
+
+    .rodape__membro a {
+        text-decoration: none;
+        color: var(--branco);
+        transition: .3s ease all;
+    }
+
+    .rodape__membro a:hover, .rodape__texto a:hover {
+        color: #0090FF;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .rodape__texto {
+        max-width: 493px;
+    }
+
+    .rodape__times {
+        display: flex;
+        max-width: 932px;
+        margin: auto;
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+
+    .rodape__texto {
+        max-width: 800px;
+    }
+
+    .rodape__times {
+        display: flex;
+        max-width: 1100px;
+        margin: auto;
+    }
+    
 }

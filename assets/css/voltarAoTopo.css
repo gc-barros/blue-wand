@@ -34,16 +34,11 @@
 
 @media screen and (max-width: 768px) {
     #scroll-button {
-        font-size: 11px;
-        width: 40px;
-        height: 40px;
-        bottom: 80px;
+        bottom: 64px;
         right: 40px;
     }
 
     #scroll-button > i {
-        font-size: 24px;
         top: 4px;
-        left: 5px;
     }
 }
