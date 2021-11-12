@@ -5,8 +5,11 @@
     justify-content: space-between;
 }
 
-.cabecalho__item-menu a {
+.cabecalho__item-menu {
     text-decoration: none;
+}
+
+.cabecalho__menu-texto {
     color: var(--branco);
     font-family: var(--barlow);
     font-weight: 600;
@@ -96,7 +99,7 @@
         right: 16px;
     }
 
-    .cabecalho__item-menu a,
+    .cabecalho__menu-texto,
     .cabecalho__item-menu .secundary-button,
     .cabecalho__item-menu .primary-button {
         color: var(--azul);
