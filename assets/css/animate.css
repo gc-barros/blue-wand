@@ -1,0 +1,16 @@
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+[data-anime="left"] {
+    opacity: 0;
+    transition: .3s linear all;
+    transform: translate3d(-40px, 0, 0);
+}
+
+[data-anime="bottom"] {
+    opacity: 0;
+    transition: .3s linear all;
+    transform: translate3d(0, 40px, 0);
+}
